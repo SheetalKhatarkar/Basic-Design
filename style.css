@@ -1,0 +1,141 @@
+#main {
+    font-family: "Inter";
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+ }
+ 
+ #main .head {
+    background-color: #ffcd9e;
+    display: flex;
+    align-items: center;
+    padding-inline: 5em;
+    font-size: large;
+ }
+ 
+ .head .flexcontainer,
+ .content,
+ .email {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffcd9e;
+ }
+ 
+ .image > img {
+    width: 100%;
+ }
+ 
+ .email div > input {
+    width: 50%;
+    border: 4px solid black;
+    border-radius: 8px;
+    padding: 2em;
+ }
+ 
+ .email div button {
+    width: 25%;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    border: 4px solid black;
+    padding: 2em;
+ }
+ 
+ .email > p {
+    color: white;
+    margin-left: 1.5em;
+ }
+ 
+ 
+ #main .foot {
+    background-color: black;
+    color: white;
+    display: flex;
+    padding-inline: 5em;
+    padding-block: 3em;
+    justify-content: space-between;
+ }
+ 
+ .foot .flexcontainer2 > ol {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5 em;
+ }
+ 
+ .foot .end {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+ }
+ 
+ .foot .end .end-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+ }
+ 
+ .end .site {
+    text-align: right;
+ }
+ 
+ .end .logo {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+ }
+ 
+ .end .mail {
+    text-align: right;
+    margin-top: 1em;
+ }
+ 
+ @media screen and (max-width: 900px) {
+    #main .head {
+       flex-direction: column-reverse;
+       padding-block: 2.5em;
+       align-items: center;
+       justify-content: center;
+       padding-inline: 1.5em;
+    }
+ 
+    #main .foot {
+       flex-direction: column;
+       gap: 1.5em;
+    }
+ 
+    .foot .site,
+    .mail {
+       text-align-last: left;
+    }
+ 
+    .foot .logo {
+       justify-content: flex-start;
+       flex-direction: row;
+    }
+ }
+ 
+ @media screen and (max-width: 600px) {
+    #main .head {
+       padding-inline: 0.5em;
+    }
+ 
+    .head .email > div {
+       width: 90%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       gap: 0.5em;
+    }
+    .email div button {
+       width: 100%;
+    }
+ 
+    .email div input {
+       width: 85%;
+    }
+ 
+    #main .foot {
+       padding-inline: 1em;
+    }
+ }
